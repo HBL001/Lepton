@@ -1,0 +1,21 @@
+{
+  "name": "Lepton HDMI C++ App (i.MX8)",
+  "image": "clotspot/verdin-dev:6.8.3",
+  "remoteUser": "torizon",
+  "workspaceFolder": "/home/torizon/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/home/torizon/workspace,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  },
+  "postCreateCommand": "source /usr/local/oecore-x86_64/environment-setup-aarch64-tdx-linux || true"
+}
