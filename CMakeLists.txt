@@ -20,6 +20,7 @@ include_directories(
 
 # Add source modules
 add_subdirectory(src/spi)
+add_subdirectory(src/I2C)
 add_subdirectory(src/sensors/lepton)
 add_subdirectory(src/sensors/mlx90640)
 add_subdirectory(src/viewer)
