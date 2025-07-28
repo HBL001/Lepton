@@ -1,18 +1,19 @@
 {
   "configurations": [
     {
-      "name": "Torizon Qt Cross",
+      "name": "Torizon",
       "includePath": [
-        "/usr/local/oecore-x86_64/sysroots/aarch64-tdx-linux/usr/include",
-        "/usr/local/oecore-x86_64/sysroots/aarch64-tdx-linux/usr/include/qt5",
-        "/usr/local/oecore-x86_64/sysroots/aarch64-tdx-linux/usr/include/qt5/QtWidgets",
-        "/usr/local/oecore-x86_64/sysroots/aarch64-tdx-linux/usr/include/qt5/QtGui",
-        "/usr/local/oecore-x86_64/sysroots/aarch64-tdx-linux/usr/include/qt5/QtCore"
+        "${workspaceFolder}/include",
+        "/usr/include/SDL2",
+        "/usr/include/aarch64-linux-gnu/SDL2",
+        "/usr/aarch64-linux-gnu/include",
+        "/usr/aarch64-linux-gnu/include/SDL2"
       ],
       "defines": [
-        "__aarch64__"
+        "__aarch64__",
+        "_REENTRANT"
       ],
-      "compilerPath": "/usr/local/oecore-x86_64/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-tdx-linux/aarch64-tdx-linux-g++",
+      "compilerPath": "/usr/bin/aarch64-linux-gnu-g++",
       "cStandard": "c11",
       "cppStandard": "c++17",
       "intelliSenseMode": "linux-gcc-arm64"
